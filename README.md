@@ -14,5 +14,5 @@ git clone --recurse-submodules <repository-url>
 ```
 3. Run LaKey Threshold PRF.
 ```
-./Scripts/compile-run-pre.sh
+./Scripts/compile-pre-run.sh
 ```
