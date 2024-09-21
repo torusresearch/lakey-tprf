@@ -2,13 +2,13 @@
 #
 # Set enviroment variables.
 #   PRIME=57896044618658097711785492504343953926634992332820282019728792003956566065153
-#   PROG=Programs/lakey2.py
+#   PROG=lakey2
 #
 # Compile and run.
 #   ./MP-SPDZ/Scripts/compile-run.py -O -E mal-shamir -P $PRIME $PROG
 #
 # Compile and run with separate preprecossing.
-#   ./Scripts/compile-run-pre.sh
+#   PROG=$PROG PRIME=$PRIME ./Scripts/compile-run-pre.sh
 # 
 # Adjust parameters.
 #   PROG=lakey2 LOG2Q=12 LOG2P=8 ./Scripts/compile-run-pre.sh
