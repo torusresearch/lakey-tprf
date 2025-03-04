@@ -51,13 +51,13 @@ def stat_dist(m: int, n: int):
 def derive_l():
     base_prime = program.prime
     # Attempt to use tight `l` and check whether the statistical distance
-    # between the generated range and the target raneg is sufficiently small.
+    # between the generated range and the target range is sufficiently small.
     l = round(math.log(base_prime, 2**log2p))
     d = stat_dist(2**(l*log2p), base_prime)
     if d > -kappa:
         # If statistical distance with tight `l` is not sufficient, widen range
         # to ensure negligible statistical distance.
-        return math.ceil(math.log(program.prime + 2**kappa, 2**log2p))
+        l = math.ceil(math.log(base_prime * 2**kappa, 2**log2p))
     return l
 
 l = derive_l() # Number of p-bit elements required to fill up the target range.
